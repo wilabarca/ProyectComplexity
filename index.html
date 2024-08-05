@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparación de Algoritmos</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <h1>Comparación de Algoritmos</h1>
+
+    <form id="formularioDatos">
+        <label for="votos">Ingrese los votos (separados por comas):</label><br>
+        <input type="text" id="votos" name="votos" required><br><br>
+        <button type="submit">Calcular</button>
+    </form>
+
+    <canvas id="miGrafico" width="600" height="400"></canvas>
+
+    <table id="tablaDatos">
+        <thead>
+            <tr>
+                <th>Tamaño</th>
+                <th>Cuadrático O(n²) (ms)</th>
+                <th>Lineal O(n) (ms)</th>
+                <th>Ordenamiento O(n log n) (ms)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Las filas se llenarán con JavaScript -->
+        </tbody>
+    </table>
+
+    <script type="module" src="./src/Controller/index.js"></script>
+</body>
+</html>
